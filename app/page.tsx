@@ -100,7 +100,9 @@ const socials = [
 
 
 
-function SectionHeading({ eyebrow, title, desc }: { eyebrow?: string; title: string; desc?: string }) {
+
+function SectionHeading({ eyebrow, title, desc }: { eyebrow?: string; title: React.ReactNode; desc?: string }) {
+
   return <div className="section-heading">
     {eyebrow && <span className="eyebrow">{eyebrow}</span>}
     <h2>{title}</h2>
